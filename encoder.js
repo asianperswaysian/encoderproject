@@ -33,15 +33,17 @@ if ($("input:checked").val() == "echo") {
   $("#textArea").append(translation[e.keycode]);
 }
 
-if($("input:checked").val() == "shiftcipher") {
+
+else if($("input:checked").val() == "shiftcipher") {
   // very like echo, shift uno  back
+  $("#textArea").append(letters[e.keyCode - 1]);
 }
 
-if($("input:checked").val() == "heiroglyphics") {
+else if($("input:checked").val() == "heiroglyphics") {
   $("#textArea").append("<img src= 'images/heiroglyphics" + something + ".gif>");
 }
 
-if($("input:checked").val() == "runes") {
+else if($("input:checked").val() == "runes") {
 
 }
 });
@@ -65,3 +67,12 @@ $("input[type='radio']".click(function){
   $(this).prop('checked',true)
   $("#textArea").append.(letters[e.keyCode]);
 });
+
+//lets translate
+var message = $("#translationInputText").val();
+var messsageArray = message.split("");
+for() {
+  var translateNumber = messageArray[i].charCodeAt(0)- 32 + 1;
+};
+
+//decodinfnfnfnfnnff
