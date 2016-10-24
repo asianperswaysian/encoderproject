@@ -62,10 +62,9 @@ $("#translationInputText").keydown(function(e){
   }
 })
 
-$("input[type='radio']".click(function){
-  $("input:checked").prop('checked',false)
-  $(this).prop('checked',true)
-  $("#textArea").append.(letters[e.keyCode]);
+$("input[type='radio']").click(function(){
+  $("input:checked").prop('checked',false);
+  $(this).prop('checked',true);
 });
 
 //lets translate
