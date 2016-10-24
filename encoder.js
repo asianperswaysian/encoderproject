@@ -40,7 +40,7 @@ if ($("input:checked").val() == "echo") {
   $('#textArea').append(letters[e.keyCode])
 };
 
-if else ($("input:checked").val() == "shift cipher") {
+if ($("input:checked").val() == "caesarcipher") {
   // very like echo, shift uno  back
   $('#textArea').append(letters[e.keyCode - 1]);
 };
