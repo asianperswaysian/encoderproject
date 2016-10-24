@@ -46,12 +46,12 @@ if ($("input:checked").val() == "caesarcipher") {
 };
 
 if ($("input:checked").val() == "heiroglyphics") {
-  $('#textArea').append("<img src = 'images/heiroglyphics/'" + (letters[e.keycode]) + ".gif>");
+  $('#textArea').append("<img src = 'images/heiroglyphics/'" + (letters[e.keyCode]) + ".gif>");
 }
 
-//else if($("input:checked").val() == "runes") {
-
-//}
+if ($("input:checked").val() == "runes") {
+  $('#textArea').append("<img src = 'images/runes/'" + (letters[e.keyCode]) + ".gif>");
+}
 });
 
 //$("#translationInputText").keydown(function(e){
