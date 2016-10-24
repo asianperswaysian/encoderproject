@@ -54,19 +54,22 @@ if ($("input:checked").val() == "runes") {
 }
 });
 
-//$("#translationInputText").keydown(function(e){
-  //if(e.keycode == 13) {
+$("#translationInputText").keydown(function(e){
+  if(e.keycode == 13) {
 // 1. grab value of input text box
-
+var decodeMyLetters = $("#translationInputText").val()
     // 2. turn strin in text box into array
-    //inputTextString.split("")
-    // z m m
+    var decodeArray = decodeMyLetters.split("");
 
+    // z m m
+for(var i = 0, i > decodeArray.length, i+++)
     // 3. loop through the array and translate each letter
 
     // 4. handy way to go from letter to number: letterVariable.charCodeAt(0)
-  //}
-//})
+    var translateNumber = decodeArray(i).charCodeAt(0)-32 + 1;
+    $("#translationArea").append(letters[e.keycode])
+  }
+})
 
 
 //lets translate
