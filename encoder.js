@@ -40,14 +40,13 @@ if ($("input:checked").val() == "echo") {
   $('#textArea').append(letters[e.keyCode])
 };
 
-
-//else if($("input:checked").val() == "shift cipher") {
+if else ($("input:checked").val() == "shift cipher") {
   // very like echo, shift uno  back
-  //$('#textArea').append(letters[e.keyCode - 1]);
-//}
+  $('#textArea').append(letters[e.keyCode - 1]);
+};
 
 //else if($("input:checked").val() == "heiroglyphics") {
-  //$("#textArea").append("<img src= 'images/heiroglyphics" + [e.keycode] + ".gif>");
+  //$('#textArea').append("<img src= 'images/heiroglyphics" + [e.keycode] + ".gif>");
 //}
 
 //else if($("input:checked").val() == "runes") {
