@@ -27,29 +27,36 @@ var letters = {
   89:"y",
   90:"z"
 }
-$("#inputArea").keydown(function(e){
 
-if ($("input:checked").val() == "echo") {
-  $("#textArea").append(translation[e.keycode]);
-}
-
-
-else if($("input:checked").val() == "shiftcipher") {
-  // very like echo, shift uno  back
-  $("#textArea").append(letters[e.keyCode - 1]);
-}
-
-else if($("input:checked").val() == "heiroglyphics") {
-  $("#textArea").append("<img src= 'images/heiroglyphics" + something + ".gif>");
-}
-
-else if($("input:checked").val() == "runes") {
-
-}
+$("input[type='radio']").click(function(){
+  $("input:checked").prop('checked',false);
+  $(this).prop('checked',true);
 });
 
-$("#translationInputText").keydown(function(e){
-  if(e.keycode == 13) {
+
+$("#inputArea").keydown(function (e) {
+
+if ($("input:checked").val() == "echo") {
+  $('#textArea').append(letters[e.keyCode])
+};
+
+
+//else if($("input:checked").val() == "shift cipher") {
+  // very like echo, shift uno  back
+  //$('#textArea').append(letters[e.keyCode - 1]);
+//}
+
+//else if($("input:checked").val() == "heiroglyphics") {
+  //$("#textArea").append("<img src= 'images/heiroglyphics" + [e.keycode] + ".gif>");
+//}
+
+//else if($("input:checked").val() == "runes") {
+
+//}
+});
+
+//$("#translationInputText").keydown(function(e){
+  //if(e.keycode == 13) {
 // 1. grab value of input text box
 
     // 2. turn strin in text box into array
@@ -59,19 +66,15 @@ $("#translationInputText").keydown(function(e){
     // 3. loop through the array and translate each letter
 
     // 4. handy way to go from letter to number: letterVariable.charCodeAt(0)
-  }
-})
+  //}
+//})
 
-$("input[type='radio']").click(function(){
-  $("input:checked").prop('checked',false);
-  $(this).prop('checked',true);
-});
 
 //lets translate
-var message = $("#translationInputText").val();
-var messsageArray = message.split("");
-for() {
-  var translateNumber = messageArray[i].charCodeAt(0)- 32 + 1;
-};
+//var message = $("#translationInputText").val();
+//var messsageArray = message.split("");
+//for() {
+  //var translateNumber = messageArray[i].charCodeAt(0)- 32 + 1;
+//};
 
 //decodinfnfnfnfnnff
